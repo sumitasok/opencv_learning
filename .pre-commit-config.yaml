@@ -1,3 +1,4 @@
+repos:
 -   repo: git://github.com/pre-commit/pre-commit-hooks
     sha: v1.1.1  # Use the ref you want to point at
     hooks:
@@ -16,7 +17,7 @@
     -   id: check-xml
     -   id: check-yaml
     -   id: debug-statements
-    -   id: detect-aws-credentials
+    # -   id: detect-aws-credentials
     -   id: detect-private-key
     -   id: double-quote-string-fixer
     -   id: end-of-file-fixer
@@ -26,10 +27,9 @@
     -   id: forbid-new-submodules
     -   id: mixed-line-ending
     -   id: name-tests-test
-    -   id: no-commit-to-branch -b master
+    -   id: no-commit-to-branch
     -   id: pyflakes
     -   id: pretty-format-json
     -   id: requirements-txt-fixer
     -   id: sort-simple-yaml
     -   id: trailing-whitespace
-
