@@ -1,0 +1,9 @@
+# https://github.com/janza/docker-python3-opencv
+FROM jjanzic/docker-python3-opencv
+
+RUN mkdir /app
+ADD . /app
+
+WORKDIR /app
+
+ENTRYPOINT /bin/bash
